@@ -1,14 +1,4 @@
-`include "alu.v"
-`include "adec.v"
-`include "decoder.v"
-`include "imem.v"
-`include "led.v"
-`include "memory.v"
-`include "pb.v"
-`include "pc.v"
-`include "register.v"
-`include "sel.v"
-`include "zf.v"
+`timescale 1ps/1ps
 
 module top
 (

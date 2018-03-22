@@ -1,6 +1,4 @@
-`include "top.v"
-`include "clk_wiz.v"
-`include "synqrst.v"
+`timescale 1ps/1ps
 
 module fpga
 (

@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module zf(clk, rst_n, zf_in, zf_out);
 	input clk, rst_n;
 	input zf_in;

@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module led
 (
   input  wire        clk,

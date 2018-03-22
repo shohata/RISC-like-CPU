@@ -1,4 +1,3 @@
-`include "top.v"
 `timescale 1ps/1ps
 
 module test;

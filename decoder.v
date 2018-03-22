@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module decoder
 (
   input  wire [15:0] op,
@@ -136,7 +138,7 @@ module decoder
         reg1   = 1'b1;
         reg0   = 1'b0;
         jmp    = 1'b0;
-        load   = 1'b1;
+        load   = 1'b0;
         link   = 1'b0;
       end
 

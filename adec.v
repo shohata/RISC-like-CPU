@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module adec
 (
   input  wire [7:0] addr,

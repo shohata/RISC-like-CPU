@@ -1,3 +1,5 @@
+`timescale 1ps/1ps
+
 module alu
 (
   input  wire [7:0] in0,
