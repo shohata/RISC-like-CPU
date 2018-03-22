@@ -12,10 +12,10 @@ Instruction format
 |:-------:|:------:|:-----:|:-----:|:-----------------:|
 | OP      | rs1    | rs0   | rd    | AND, OR, ADD, SUB |
 | OP      | rs1    | rs0   | 0000  | CMP               |
-| OP      | rs1    | imm   |       | ADDI, SUBI, CMPI  |
+| OP      | rs1    | imm          || ADDI, SUBI, CMPI  |
 | OP      | rs1    | imm   | rd    | LOAD, JMPR        |
 | OP      | rs1    | rs0   | imm   | STORE             |
-| OP      | imm    |       | rd    | JMP, JNZ, LI      |
+| OP      | imm           || rd    | JMP, JNZ, LI      |
 
 Control signals
 
