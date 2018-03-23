@@ -28,6 +28,7 @@ module register
       regis[8]  <= 0;
       regis[9]  <= 0;
       regis[10] <= 0;
+      regis[11] <= 0;
       regis[12] <= 0;
       regis[13] <= 0;
       regis[14] <= 0;
@@ -35,8 +36,6 @@ module register
     end else begin
       if (we) begin
         regis[dst] <= data;
-      end else begin
-        regis[dst] <= regis[dst];
       end
     end
   end
