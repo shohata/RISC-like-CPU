@@ -21,8 +21,6 @@ module memory
     end else begin
       if (we) begin
         mem[addr] <= in;
-      end else begin
-        mem[addr] <= mem[addr];
       end
     end
   end
