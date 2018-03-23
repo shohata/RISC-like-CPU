@@ -23,7 +23,7 @@ module imem
 
       // func()
       20 : op = {LOAD, 4'h3, 4'd0, 4'h4};   // reg4 = mem[reg3+0];
-      21 : op = {CMPI, 8'd11, 4'h4};        //
+      21 : op = {CMPI, 4'h4, 8'd11};        //
       22 : op = {JNZ, 8'd25, 4'hf};         // if(!(reg4 == 11)){
       23 : op = {LI, 8'd1, 4'h5};           // reg5 = 1;
       24 : op = {JMP, 8'd26, 4'hf};         // } else {
