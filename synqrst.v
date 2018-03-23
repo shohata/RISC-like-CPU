@@ -13,6 +13,6 @@ module synqrst
     synq[1] <= synq[0];
     synq[0] <= asynq_rst_n;
   end
-  assign synq_rst_n = synq;
+  assign synq_rst_n = synq[2];
 
 endmodule
