@@ -15,7 +15,7 @@ module memory
 
   always @(posedge clk) begin
     if (!rst_n) begin
-      for(i = 0; i <= 256; i = i + 1) begin
+      for(i = 0; i < 256; i = i + 1) begin
         mem[i] <= 8'h0;
       end
     end else begin
