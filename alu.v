@@ -29,7 +29,7 @@ module alu
       LI      : out = in0;
       default : out = 8'bx;
     endcase
-    zf = (out)? 1'b0 : 1'b1;
+    zf = (out)? 1'b1 : 1'b0;
   end
 
 endmodule
