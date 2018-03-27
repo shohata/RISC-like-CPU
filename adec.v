@@ -7,7 +7,7 @@ module adec
 );
 
   always @(*) begin
-    if (addr == 8'hf4) begin
+    if (addr == 8'hfb) begin
       mem_io = 1'b1;
     end else begin
       mem_io = 1'b0;

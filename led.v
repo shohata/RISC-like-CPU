@@ -19,16 +19,18 @@ module led
       mem[1] <= 8'b0;
       mem[2] <= 8'b0;
       mem[3] <= 8'b0;
-      cnt    <= 16'b0;
+      cnt    <= 14'b0;
       led    <= 12'b0;
     end else begin
       cnt <= cnt + 1;
-      case (addr)
-        8'hf0 : mem[0] <= in;
-        8'hf1 : mem[1] <= in;
-        8'hf2 : mem[2] <= in;
-        8'hf3 : mem[3] <= in;
-      endcase
+      if (we) begin
+        case (addr)
+          8'hfc : mem[0] <= in;
+          8'hfd : mem[1] <= in;
+          8'hfe : mem[2] <= in;
+          8'hff : mem[3] <= in;
+        endcase
+      end
       if (!cnt[11:0]) begin
         case (cnt[13:12])
           2'b00 : led <= {4'b1110, mem[0]};

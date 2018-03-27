@@ -10,7 +10,7 @@ module pb
 );
 
   reg [2:0]  debounce [4:0];
-  reg [23:0] cnt;
+  reg [11:0] cnt;
   reg [4:0]  state;
 
   always @(posedge clk) begin
@@ -20,7 +20,7 @@ module pb
       debounce[2] <= 3'b0;
       debounce[3] <= 3'b0;
       debounce[4] <= 3'b0;
-      cnt         <= 24'b0;
+      cnt         <= 12'b0;
       state       <= 5'b0;
     end else begin
       cnt <= cnt + 1;
@@ -44,6 +44,6 @@ module pb
     end
   end
 
-  assign out = (addr == 8'hf8)? {3'b0, state} : 8'b0;
+  assign out = (addr == 8'hfb)? {3'b0, state} : 8'b0;
 
 endmodule
