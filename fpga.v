@@ -15,8 +15,8 @@ module fpga
   /* clock wizard */
   clk_wiz clk_wiz_inst
   (
-    .clkin1  (clk),
-    .clkout1 (clk_out),
+    .clk_in1  (clk),
+    .clk_out1 (clk_out),
     .resetn  (rst_n),
     .locked  (locked)
   );
